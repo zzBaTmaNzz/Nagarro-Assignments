@@ -1,0 +1,25 @@
+li{
+    display: inline-block;
+    margin: 10px;
+    padding: 5px;
+    
+
+}
+
+div{
+    left: 0;
+    position: fixed;
+    width: 100%;
+    top:0;
+    background-color: lightcoral;
+}
+
+li:last-child{
+    position: absolute;
+    right: 50px;
+}
+
+a{
+    text-decoration: none;
+    color: beige ;
+}
