@@ -1,0 +1,30 @@
+#box{
+    background-color: bisque;
+    height: 300px;
+    width: 700px;
+    visibility: hidden;
+    
+}
+
+body{
+    background-color: aqua;
+}
+
+#box.show{
+    visibility: visible;
+}
+
+.close {
+    position: absolute;
+    right: 503px;
+    top: 125px;
+    width: 40px;
+    height: 45px;
+    opacity: 0.5;
+    font-size: 25px;
+}
+
+.close:hover{
+    opacity: 1.0;
+    
+}
