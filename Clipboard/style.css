@@ -1,0 +1,19 @@
+body{
+    background-color: azure;
+}
+
+h1{
+    text-align: center;
+}
+
+button{
+    background-color: lightgrey;
+}
+
+.one, .two, .three{
+    text-align: center;
+}
+
+.one, .two, .three{
+    margin-top: 40px;
+}
