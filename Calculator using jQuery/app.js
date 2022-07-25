@@ -21,13 +21,19 @@ $(document).ready(function(){
 })
 
 function handleNumber(num){
-    if(num1===""){
-        num1 = num;
-    }else{
-        num2 = num;
+    if(operator === ''){
+        num1 += num;
+        displayButton(num1); 
+    }
+    
+    else{
+        num2 += num;
+        displayButton(num2); 
     }
 
-    displayButton(num);
+    displayButton(num1 + operator + num2);
+    
+    
 }
 
 function handleOperator(oper){
@@ -57,6 +63,11 @@ function handleTotal(){
             total+= +num1 * +num2;
             displayButton(total);
             break;
+        case '^':
+            total+= Math.pow(+num1, +num2);
+            displayButton(total);
+            break;
+             
         case '%':
             total+= +num1 % +num2;
             displayButton(total);
