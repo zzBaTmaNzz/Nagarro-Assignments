@@ -1,0 +1,79 @@
+body{
+    background-color: azure;
+    margin-top: 100px;
+}
+
+.slider-container{
+    width: 600px;
+    height: 400px;
+    position: relative;
+    margin: 0 auto;
+}
+
+.handle .prev{
+    position: absolute;
+    z-index: 10;
+    font-size: 25px;
+    top: 40%;
+    left: 10px;
+    font-weight: 700;
+}
+
+.handle .next{
+    right: 10px;
+    position: absolute;
+    font-size: 25px;
+    z-index: 10;
+    top: 40%;
+    font-weight: 700;
+}
+
+
+.handle .nav-btn{
+    background: gray;
+    cursor: pointer;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+}
+
+.handle .nav-btn:hover {
+    background: white;
+}
+
+.slider{
+    margin-top: 20px;
+    transition: all 0.5s ease;
+}
+
+.slider img{
+    width: 100%;
+    transition: all 0.3s ease;
+    border:8px solid gray;
+}
+
+.caption {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    font-size: 20px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background: grey;
+    height: 30px;
+}
+
+.item {
+    position: absolute;
+    display: none;
+}
+  
+.main {
+    display: block;
+  }
